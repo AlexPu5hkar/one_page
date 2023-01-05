@@ -11,28 +11,68 @@
     font-size: 46px
     text-align: center
     padding: 80px
-    font-family: 'Great Vibes', cursive git commit -a -m"first commit
+    font-family: 'Great Vibes', cursive 
     font-weight: 600
     color: #0accdd
     text-shadow: 2px 2px 6px #000
     letter-spacing: 2.5px
 .btn
+  font-family: 'Montserrat', sans-serif
   display: inline-block
   margin: 200px
-  width: 100px
+  width: 500px
   height: 50px
   border: 2px solid #000
-  border-radius: 20px
+  border-radius: 18px
+  font-weight: 600
   margin: 10px
   text-align: center
   color: #0accdd
-  text-shadow: 2px 2px 6px #000
+  text-shadow: 2px 2px 6px #000000
   font-size: 20px
+  line-height: 40px
+  background: linear-gradient(123deg, #b37bb9, #7c98c2)
+  box-shadow: 2px 6px 2px #000000
+  &:hover
+    cursor: pointer
+    text-shadow: 2px 2px 6px #121212  
+    color: #00eaff 
+    background: linear-gradient(123deg, #b37bb9 55%, #fff 60%, #7c98c2 65%)
+    transition: 1s ease
+  &:active
+    box-shadow: 1px 2px 2px #000000
+    transform: trnslateY(4px)
 .price
   position: relative
   width: 100vw
   height: 100vh
   background: linear-gradient(90deg, #12c3b4, #9524ae)
+  &__header
+    color: #79e9f1
+    font-size: 30px
+    font-weight: 600
+    font-family: 'Montserrat', sans-serif
+    text-align: center
+    text-shadow: 2px 2px 8px #000
+  &__title
+    color: #79e9f1
+    font-size: 26px
+    font-weight: 600
+    font-family: 'Montserrat', sans-serif
+    text-align: center
+    text-shadow: 2px 2px 8px #000
+    margin-top: 20px
+  &__table
+    color: #79e9f1
+    width: 90%
+    margin: 30px
+    font-size: 18px
+    font-weight: 600
+    font-family: 'Montserrat', sans-serif
+    text-align: start
+    text-shadow: 2px 2px 8px #000
+.cost
+  padding: 50px
 .links
   position: relative
   width: 100vw
