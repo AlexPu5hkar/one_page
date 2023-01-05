@@ -1,14 +1,14 @@
 
 *
+  box-sizing: border-box
   margin: 0
   padding: 0
 .header 
-  position: relative
   width: 100vw
   height: 100vh
   background: linear-gradient(90deg, #12c3b4, #9524ae)
   &__title
-    font-size: 46px
+    font-size: 50px
     text-align: center
     padding: 80px
     font-family: 'Great Vibes', cursive 
@@ -16,36 +16,47 @@
     color: #0accdd
     text-shadow: 2px 2px 6px #000
     letter-spacing: 2.5px
+  &__buttons
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+a
+  text-decoration: none
+  color:#0accdd
+  display: flex
+  flex-direction: column
 .btn
+  letter-spacing: 15px
   font-family: 'Montserrat', sans-serif
   display: inline-block
   margin: 200px
   width: 500px
-  height: 50px
+  height: 80px
   border: 2px solid #000
-  border-radius: 18px
+  border-radius: 20px
   font-weight: 600
   margin: 10px
   text-align: center
   color: #0accdd
-  text-shadow: 2px 2px 6px #000000
-  font-size: 20px
-  line-height: 40px
+  text-shadow: 4px 4px 4px #000000
+  font-size: 30px
+  line-height: 70px
   background: linear-gradient(123deg, #b37bb9, #7c98c2)
   box-shadow: 2px 6px 2px #000000
   &:hover
     cursor: pointer
     text-shadow: 2px 2px 6px #121212  
     color: #00eaff 
-    background: linear-gradient(123deg, #b37bb9 55%, #fff 60%, #7c98c2 65%)
-    transition: 1s ease
+    background: linear-gradient(123deg, #b37bb9 55%, #fff 60%, #b37bb9 65%)
+    transition: 0.5s ease
   &:active
     box-shadow: 1px 2px 2px #000000
     transform: trnslateY(4px)
 .price
   position: relative
   width: 100vw
-  height: 800px
+  height: 700px
   background: linear-gradient(90deg, #12c3b4, #9524ae)
   &__header
     color: #79e9f1
@@ -87,7 +98,31 @@ tr
 .cost
   padding: 50px
 .links
-  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-around
   width: 100vw
   height: 100vh
   background: linear-gradient(90deg, #12c3b4, #9524ae)
+  &__ref
+    border-radius: 50%
+    width: 68px
+    height: 68px
+    background: #000
+    box-shadow: 2px 8px 8px #fff
+    &:active
+      box-shadow: 2px 2px 2px #fff
+      transition: translateY(6px)
+      width: 64px
+      height: 64px
+.tel
+  position: absolute
+  buttom: 20px
+  left: 50px
+  color: #79e9f1
+  font-size: 30px
+  font-weight: 600
+  text-align: end
+  font-family: 'Montserrat', sans-serif
+  text-shadow: 2px 2px 8px #000
