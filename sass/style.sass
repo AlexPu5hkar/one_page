@@ -106,13 +106,21 @@ tr
   height: 500px
   background: linear-gradient(90deg, #12c3b4, #9524ae)
   &__ref
+    display: flex
+    flex-direction: row
+    font-size: 40px
+    font-weight: 700
+    text-shadow: 2px 2px 5px #000
     &:active
       transform: translateY(6px)
 .tel
   position: absolute
+  transform: rotate(-90deg)
   buttom: 20px
-  left: 50px
-  color: #79e9f1
+  right: 50px
+  display: flex
+  flex-direction: row
+  color: #da0852
   font-size: 30px
   font-weight: 600
   text-align: end
@@ -120,12 +128,22 @@ tr
   text-shadow: 2px 2px 8px #000
   &:active
     font-size: 34px
+.vk
+  color: #0f76e3
+.vb
+  color: #7a0ef7
+.ins
+  color: #ed0fed
+.wa
+  color: #18d207
+.telegram
+  color: #0c85e8
 
 @media (max-width: 760px)
   .header
     text-align: center
     &__title
-      font-size: 28px
+      font-size: 48px
   .btn
     width: 300px
     font-size: 24px
@@ -141,5 +159,4 @@ tr
       font-size: 16px
   .tel
     font-size: 26px
-    transform: rotate(-90deg)
-    left: 1px
+    right: 0px
